@@ -1,0 +1,13 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    background-color: rgb(192, 192, 173);
+}
+
+h1, h2 {
+    color: red;
+}
+
+p {
+    color: green;
+}
