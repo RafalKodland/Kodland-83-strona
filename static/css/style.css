@@ -1,71 +1,93 @@
-@keyframes color-pulse {
-    0% {
-        color: red;
-    }
-
-    50% {
-        color: blue;
-    }
-
-    100% {
-        color: red;
-    }
-}
-
-@keyframes resize {
-    0% {
-        width: 25%;
-        height: 25%;
-    }
-
-    25% {
-        width: 50%;
-        height: 25%;
-    }
-
-    50% {
-        width: 50%;
-        height: 50%;
-    }
-
-    75% {
-        width: 25%;
-        height: 50%;
-    }
-
-    100% {
-        width: 25%;
-        height: 25%;
-    }
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blue;
-    background-color: rgb(192, 192, 173);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #fff;
+    color: #272727;
 }
 
-h1 {
-    color: red;
-    animation: color-pulse 3s infinite;
+h1, h2, p {
+    margin: 0;
 }
 
-p {
-    color: green;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-img {
-    animation: resize 5s infinite;
+.header {
+    background-image: url("../img/back.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #CCE59D;
+    padding: 25vh 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-h2 {
-    font-size: 20px;
-    color: black;
-    transition: font-size 3s, color 1s;
+.header__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    text-align: right;
 }
 
-h2:hover {
-    font-size: 25px;
-    color: white;
-    transition: font-size 3s, color 1s;
+main {
+    padding: 0 30px 100px;
+}
+
+.main__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list__item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 24px;
+    border: 1px solid #EB8028;
+    transition: 0.2s;
+}
+.item__img {
+    object-fit: contain;
+    width: 150px;
+}
+
+.list__item a:hover {
+    box-shadow: 1px 1px 4px 4px #0EB07C;
+}
+
+.main__rez {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.rez__img {
+    object-fit: contain;
+    width: 300px;
+}
+
+.main__title--margin {
+    margin-bottom: 50px;
 }
